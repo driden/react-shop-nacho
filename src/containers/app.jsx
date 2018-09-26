@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Products from './products'
-
+import NavbarContainer from './../components/navbarContainer'
 class App extends Component {
     constructor(props) {
         super(props)
@@ -12,6 +12,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <NavbarContainer/>
                 <Products />
             </div>)
     }

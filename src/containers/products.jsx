@@ -18,7 +18,7 @@ class Products extends Component {
     }
     render() {
         return (
-            <div className="grid-container">{this.state.data.map(p => <Product product={p}/>)}
+            <div className="grid-container">{this.state.data.map(p => <Product key={p.id} product={p}/>)}
             </div>)
     }
 }
