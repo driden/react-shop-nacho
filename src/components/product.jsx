@@ -5,7 +5,7 @@ const Product = ({ product }) => {
     return (
             <div id={id} key={id} className="grid-item">
                 <span>{name}</span>
-                <img src={image} />
+                <img src="../public/logo.jpg" />
                 <span>{price}</span>
             </div>
         
