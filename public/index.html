@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ 
 <html lang="en">
 
 <head>
@@ -14,10 +14,10 @@
       justify-content: space-around;
       background-color: rgba(243, 117, 33, 0.212);
 
+			grid-column: 3 / -1;
     }
 
     .grid-item {
-
       background-color: rgba(255, 255, 255, 0.8);
       border: 1px solid rgba(0, 0, 0, 0.8);
       padding: 20px;
@@ -31,13 +31,27 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-around;
+			
     }
 
     .grid-item img {
       height: 250px;
       width: auto;
     }
-    
+
+    #layout{
+    	display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: repeat(3, auto);
+    }
+
+		nav {
+			position: fixed;
+			grid-column: 1 / 2;
+		}
+		nav > a {
+			display: block;
+		}
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
