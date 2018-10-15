@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Products from './products'
 import Categories from './../components/categories'
+import { layout } from './../styles/layout.css'
 
 class App extends Component {
     constructor(props) {
@@ -31,7 +32,7 @@ class App extends Component {
     }
     render() {
         return (
-            <div id="layout">
+            <div id="layout" className={layout}>
                 <Categories categories={this.state.categories} />
                 <Products products={this.state.products} />
             </div>)

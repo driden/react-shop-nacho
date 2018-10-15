@@ -1,11 +1,12 @@
 import React from 'react'
-import Category from './category'
+import Cat from './category'
+import { category, navMenu } from './../styles/categories.css'
 
 const categories = ({ categories }) => (
-    <nav>
+    <nav className={navMenu}>
         {
             categories.map(cat =>
-                <Category key={cat.id} text={cat.name} value={cat.id} />)
+                <Cat key={cat.id} text={cat.name} value={cat.id} className={category} />)
         }
     </nav>)
 

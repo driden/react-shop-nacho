@@ -1,0 +1,7 @@
+.navMenu {
+    position: fixed;
+    grid-column: 1 / 2;
+}
+.category {
+    display: block;
+}

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import { category } from './../styles/categories.css'
 
-const category = ({value, text}) => (
-    <a href="#" id={value}><span>{text}</span></a>
+const cat = ({value, text}) => (
+    <a href="#" id={value} className={category}><span>{text}</span></a>
 )
 
-export default category;
+export default cat;
